@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Daftar - Ivlist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app-frame">
+        <div class="page-container"> 
+            <header class="page-header">
+                <a href="list.html" class="back-btn" aria-label="Kembali">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1>Tambah Daftar Baru</h1>
+                <div style="width: 40px;"></div> </header>
+
+            <main class="page-main-content">
+                <form id="add-list-form">
+                    <div class="form-group anim-fade-in-up" style="--delay: 0.1s;">
+                        <label for="listName">Nama Daftar Belanja</label>
+                        <input type="text" id="listName" name="listName" placeholder="Contoh: Belanja Bulanan" required>
+                    </div>
+
+                    <hr class="form-divider anim-fade-in-up" style="--delay: 0.2s;">
+
+                    <div class="add-item-section anim-fade-in-up" style="--delay: 0.3s;">
+                        <h3 class="section-title">Tambahkan Item</h3>
+                        <div class="add-item-form">
+                            <input type="text" id="itemName" placeholder="Nama Barang (e.g., Apel)">
+                            <div class="item-details-grid">
+                                <input type="number" id="itemQty" placeholder="Jumlah">
+                                <input type="text" id="itemUnit" placeholder="Satuan (e.g., Kg, Pcs)">
+                            </div>
+                            <input type="text" id="itemNotes" placeholder="Keterangan (opsional)">
+                            <button type="button" class="btn-add-item">
+                                <i class="fas fa-plus"></i> Tambah Item
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="added-items-container anim-fade-in-up" style="--delay: 0.4s;">
+                        <h3 class="section-title">Daftar Item (2)</h3>
+                        <div id="added-items-list">
+                            <div class="list-item-preview">
+                                <div class="item-info">
+                                    <span class="item-name">Apel Fuji</span>
+                                    <span class="item-details">2 Kg - Beli yang manis</span>
+                                </div>
+                                <button type="button" class="delete-item-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="list-item-preview">
+                                <div class="item-info">
+                                    <span class="item-name">Susu UHT Full Cream</span>
+                                    <span class="item-details">4 Pcs</span>
+                                </div>
+                                <button type="button" class="delete-item-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full-width anim-fade-in-up" style="--delay: 0.5s;">
+                        Simpan Daftar Belanja
+                    </button>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

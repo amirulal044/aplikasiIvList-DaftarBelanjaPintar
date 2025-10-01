@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Daftar - Ivlist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app-frame">
+        <div class="page-container">
+            <header class="page-header detail-header">
+                <a href="list.html" class="back-btn" aria-label="Kembali"><i class="fas fa-arrow-left"></i></a>
+                <h1>Belanja Bulanan</h1>
+                <button class="options-btn" aria-label="Opsi lainnya"><i class="fas fa-ellipsis-v"></i></button>
+            </header>
+
+            <main class="page-main-content">
+                <div class="list-progress-section anim-fade-in-up" style="--delay: 0.1s;">
+                    <div class="progress-text">
+                        <span class="progress-label">Progress Belanja</span>
+                        <span class="progress-count" id="progressCount">0 / 0 Item</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressBarFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="item-category anim-fade-in-up" style="--delay: 0.2s;">
+                    <h2>Perlu dibeli</h2>
+                    <div class="items-container" id="pendingItemsContainer">
+                        </div>
+                </div>
+
+                <div class="item-category anim-fade-in-up" style="--delay: 0.3s;">
+                    <h2>Sudah dibeli</h2>
+                    <div class="items-container" id="completedItemsContainer">
+                        </div>
+                </div>
+            </main>
+
+            <div class="quick-add-bar">
+                <input type="text" id="quickAddItemInput" placeholder="Tambah item cepat...">
+                <button class="btn-add-quick" id="addQuickItemBtn"><i class="fas fa-plus"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
