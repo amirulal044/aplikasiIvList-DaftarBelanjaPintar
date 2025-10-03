@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja - Ivlist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app-frame">
+        <div class="page-container"> 
+            
+            <header class="page-header">
+                <h1>Daftar Belanja</h1>
+                <button class="notification-btn" aria-label="Notifikasi">
+                    <i class="fas fa-bell"></i>
+                </button>
+            </header>
+
+            <main class="page-main-content">
+
+                <div class="tabs-container anim-fade-in-up" style="--delay: 0.1s;">
+                    <button class="tab-item active" data-tab="semua">Semua</button>
+                    <button class="tab-item" data-tab="pending">Belum Selesai</button> <button class="tab-item" data-tab="done">Selesai</button> </div>
+
+                <div class="search-add-container anim-fade-in-up" style="--delay: 0.2s;">
+                    <div class="search-box">
+                        <input type="text" placeholder="Cari daftar..." id="searchInput" >
+                        
+                    </div>
+                    <button class="btn-add">
+                        <i class="fas fa-plus"></i> Tambah
+                    </button>
+                </div>
+
+                <div class="shopping-list-container">
+                    <a href="belanja-detail.html" class="list-card anim-fade-in-up" data-status="pending" style="--delay: 0.3s;">
+                        <div class="card-header">
+                            <h3>Belanja Bulanan</h3>
+                            <span class="item-count">5/12 Item</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 42%;"></div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="list-date">Dibuat: 2 Oktober 2025</span>
+                        </div>
+                    </a>
+
+                    <a href="belanja-detail.html" class="list-card anim-fade-in-up" data-status="done" style="--delay: 0.4s;">
+                        <div class="card-header">
+                            <h3>Kebutuhan Dapur</h3>
+                            <span class="item-count done">18/18 Item</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill done" style="width: 100%;"></div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="list-date">Selesai: 1 Oktober 2025</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="empty-state" style="display: none;">
+                    <i class="fas fa-clipboard-list empty-icon"></i>
+                    <h2>Belum Ada Daftar</h2>
+                    <p>Mulai buat daftar belanjamu yang pertama!</p>
+                    <button class="btn btn-primary">Buat Daftar Baru</button>
+                </div>
+
+            </main> 
+
+            <nav class="bottom-nav">
+                <a href="home.html" class="nav-item">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="list.html" class="nav-item active">
+                    <i class="fas fa-list-alt"></i>
+                </a>
+                <a href="profil.html" class="nav-item">
+                    <i class="fas fa-user"></i>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" defer></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
